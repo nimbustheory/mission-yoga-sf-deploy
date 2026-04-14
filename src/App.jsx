@@ -69,7 +69,7 @@ const STUDIO_IMAGES = {
   about: "https://newmissionyoga.com/wp-content/uploads/2023/01/dierdresArt.jpg",
   pricing: "https://newmissionyoga.com/wp-content/uploads/2023/01/steve-poses-merge.png",
   teacherTraining: "https://newmissionyoga.com/wp-content/uploads/2025/10/teachers-home.jpg",
-  candlelitPower: null,
+  candlelitPower: "https://newmissionyoga.com/wp-content/uploads/2025/02/yoga-studio.jpg",
   teachers: {},
 };
 
@@ -264,8 +264,8 @@ function HomePage() {
     <div className="pb-6">
       {/* Hero */}
       <section style={{ position: "relative", overflow: "hidden", color: "#fff", padding: "32px 22px", minHeight: 240 }}>
-        <div style={{ position: "absolute", inset: 0, background: STUDIO_IMAGES.heroYouBelongHere ? `url(${STUDIO_IMAGES.heroYouBelongHere}) center/cover` : `linear-gradient(135deg, ${T.bg}, hsl(340,15%,14%), hsl(270,15%,12%))`, filter: STUDIO_IMAGES.heroYouBelongHere ? "brightness(0.7)" : "none" }} />
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.45) 100%)" }} />
+        <div style={{ position: "absolute", inset: 0, background: STUDIO_IMAGES.heroYouBelongHere ? `url(${STUDIO_IMAGES.heroYouBelongHere}) center/cover` : `linear-gradient(135deg, ${T.bg}, hsl(340,15%,14%), hsl(270,15%,12%))`, filter: STUDIO_IMAGES.heroYouBelongHere ? "brightness(0.85)" : "none" }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.02) 40%, rgba(0,0,0,0.30) 100%)" }} />
         <div style={{ position: "absolute", top: 16, right: 20, fontSize: 80, opacity: 0.1, lineHeight: 1, zIndex: 1 }}>M</div>
         <div style={{ position: "relative", zIndex: 2 }}>
           <p style={{ color: T.accent, fontSize: 11, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.2em", marginBottom: 8 }}>
@@ -1141,8 +1141,8 @@ function PageTitle({ title, subtitle }) {
 function PageHero({ title, subtitle, image }) {
   return (
     <div style={{ position: "relative", overflow: "hidden", padding: "28px 20px 20px", minHeight: 220, marginBottom: 16, display: "flex", flexDirection: "column", justifyContent: "flex-end" }}>
-      <div style={{ position: "absolute", inset: 0, background: image ? `url(${image}) center/cover` : `linear-gradient(135deg, ${T.bg}, hsl(340,20%,16%))`, filter: image ? "brightness(0.7)" : "none" }} />
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.45) 100%)" }} />
+      <div style={{ position: "absolute", inset: 0, background: image ? `url(${image}) center/cover` : `linear-gradient(135deg, ${T.bg}, hsl(340,20%,16%))`, filter: image ? "brightness(0.85)" : "none" }} />
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.02) 50%, rgba(0,0,0,0.30) 100%)" }} />
       <div style={{ position: "relative", zIndex: 2 }}>
         <h1 style={{ fontFamily: "'Syne', Georgia, serif", fontSize: 34, margin: 0, color: "#fff" }}>{title}</h1>
         {subtitle && <p style={{ fontSize: 13, color: "rgba(255,255,255,.75)", margin: "4px 0 0" }}>{subtitle}</p>}
@@ -1251,8 +1251,8 @@ function CTACard() {
   const { setPage } = useContext(AppContext);
   return (
     <div style={{ borderRadius: 14, padding: "22px 20px", color: "#fff", position: "relative", overflow: "hidden" }}>
-      <div style={{ position: "absolute", inset: 0, background: STUDIO_IMAGES.welcomeEntrance ? `url(${STUDIO_IMAGES.welcomeEntrance}) center/cover` : `linear-gradient(135deg, ${T.bg}, hsl(340,20%,14%))`, backgroundSize: "cover", backgroundPosition: "center", filter: STUDIO_IMAGES.welcomeEntrance ? "brightness(0.7)" : "none" }} />
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.45) 100%)" }} />
+      <div style={{ position: "absolute", inset: 0, background: STUDIO_IMAGES.welcomeEntrance ? `url(${STUDIO_IMAGES.welcomeEntrance}) center/cover` : `linear-gradient(135deg, ${T.bg}, hsl(340,20%,14%))`, backgroundSize: "cover", backgroundPosition: "center", filter: STUDIO_IMAGES.welcomeEntrance ? "brightness(0.85)" : "none" }} />
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.02) 50%, rgba(0,0,0,0.30) 100%)" }} />
       <div style={{ position: "absolute", top: -20, right: -10, fontSize: 100, opacity: 0.08, lineHeight: 1, zIndex: 1 }}>M</div>
       <h3 style={{ fontFamily: "'Syne', serif", fontSize: 24, margin: "0 0 6px", fontWeight: 600, position: "relative", zIndex: 2 }}>New Student Deal</h3>
       <p style={{ fontSize: 13, color: "rgba(255,255,255,.75)", margin: "0 0 14px", maxWidth: 260, position: "relative", zIndex: 2 }}>30 days of unlimited classes for just $99 — plus a FREE welcome tote worth $400+. New SF residents only. Come as you are.</p>
